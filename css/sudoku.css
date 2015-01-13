@@ -48,6 +48,11 @@
 	width:520px;
 	background:#ffffff;
 }
+
+.small #content .wrapper .page .block{
+	margin: 10px 0;
+	width: 300px;
+}
 #content .wrapper .page .block .title {
 	margin:0;
 	padding:0;
@@ -55,6 +60,9 @@
 	overflow:auto;
 	background:#f2f2f2;
 	border:1px solid #dddddd;
+}
+.small #content .wrapper .page .block .title {
+	width:300px;
 }
 #content .wrapper .page .block .title h3 {
 	margin:20px;
@@ -72,7 +80,9 @@
 	border-top:1px solid #dddddd;
 	background:#ffffff;
 }
-
+ .small #content .wrapper .page .block .content {
+ 	width:300px;
+ }
 
 #content .wrapper .left {
 	margin:20px 0 0 20px;
@@ -96,6 +106,10 @@
 	background:#ffffff;
 	overflow:hidden;
 }
+.small .board{
+	width: 270px;
+}
+
 .board ul {
 	margin:-5px -15px -15px -5px;
 	padding:0;
@@ -104,6 +118,10 @@
 	overflow:hidden;
 	float:left;
 }
+.small .board ul {
+	margin: 0px -15px -15px 0px;
+	
+}
 .board ul li .grid {
 	margin:0 10px 10px 0;
 	padding:0;
@@ -111,11 +129,19 @@
 	height:135px;
 	float:left;
 }
+.small .board ul li .grid {
+	width: 85px;
+	height: 85px;
+}
 .board ul li .grid ul {
 	margin:0;
 	padding:0;
 	width:135px;
 	height:135px;
+}
+.small .board ul li .grid ul {
+	width:90px;
+	height: 90px;
 }
 .board ul li .grid ul li .box {
 	margin:5px;
@@ -124,6 +150,14 @@
 	height:35px;
 	float:left;
 }
+.small .board ul li .grid ul li .box {
+	margin:2px;
+	padding:0;
+	width:20px;
+	height:20px;
+	
+}
+
 .board ul li .grid ul li .box input[type="text"] {
 	margin:0;
 	padding:5px;
@@ -131,4 +165,10 @@
 	height:23px;
 	border:1px solid #dddddd;
 	text-align:center;
+}
+.small .board ul li .grid ul li .box input[type="text"] {
+
+	padding:2px;
+	width:15px;
+	height:15px;
 }
