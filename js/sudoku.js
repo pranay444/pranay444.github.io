@@ -12,6 +12,18 @@ $(document).ready(function(){
 			onResizeHandler();
 	});
 
+	$('#reset').on('click',function(){
+		reset();
+	});
+	$('#check').on('click',function(){
+		
+	});
+	$('#solve').on('click',function(){
+		solve();
+	});
+	$('.box').find('input').on('blur',function(){
+		invalid(this);
+	});
 	
 
 	reset();
@@ -50,4 +62,28 @@ function reset(){
 							}
 							//
 						}
+}
+
+function solve() {
+	for (var i = 0; i < sudoku.inputtext.length; i++) {
+		var inputtext2 = document.getElementById(sudoku.inputtext[i]);
+		var solution2 = sudoku.solution[i];
+		
+		inputtext2.value = solution2;
+		
+	}
+}
+
+function invalid(inputtext) {
+	console.log(inputtext);
+	var regexp = new RegExp("[1-9]");
+	// IF VALUE IS 1-9
+	if (regexp.test(inputtext.value)) {
+		//
+	// IF VALUE IS NOT 1-9
+	} else if (!regexp.test(inputtext.value)) {
+		// ASSIGNING AN EMPTY VALUE TO THE ASSOCIATED FIELD
+		inputtext.value = "";
+		alert("Use numbers from 1 to 9.");
+	}
 }
