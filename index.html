@@ -1,1 +1,262 @@
-Hello World Test
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>SUDOKU</title>
+<link rel="stylesheet" href="css/sudoku.css" type="text/css" />
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+</head>
+
+<body>
+ <!-- CONTENT -->
+    <div id="content">
+    	<!-- WRAPPER -->
+        
+    	<!-- WRAPPER -->
+        <div class="wrapper">
+        	
+        	<!-- PAGE -->
+            <div class="page">
+         
+                <!-- CONTENT -->
+                <div class="content">
+                	<p></p>
+                </div>
+                <!-- END CONTENT -->
+                <!-- BLOCK -->
+                <div class="block">
+                	<div class="title"><h3>Sudoku Game</h3></div>
+                    <div class="content">
+                        <!-- BOARD -->
+                        <div id="board" class="board">
+                            <ul>
+                                <li>
+                                    <!-- GRID -->
+                                    <div class="grid">
+                                        <ul>
+                                            <li>
+                                                <div class="box"><input type="text" id="input1" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input2" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input3" value="" maxlength="1"  /></div>
+                                            </li>
+                                            <li>
+                                                <div class="box"><input type="text" id="input4" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input5" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input6" value="" maxlength="1"  /></div>
+                                            </li>
+                                            <li>
+                                                <div class="box"><input type="text" id="input7" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input8" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input9" value="" maxlength="1"  /></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- END GRID -->
+                                    <!-- GRID -->
+                                    <div class="grid">
+                                        <ul>
+                                            <li>
+                                                <div class="box"><input type="text" id="input10" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input11" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input12" value="" maxlength="1"  /></div>
+                                            </li>
+                                            <li>
+                                                <div class="box"><input type="text" id="input13" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input14" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input15" value="" maxlength="1"  /></div>
+                                            </li>
+                                            <li>
+                                                <div class="box"><input type="text" id="input16" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input17" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input18" value="" maxlength="1"  /></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- END GRID -->
+                                    <!-- GRID -->
+                                    <div class="grid">
+                                        <ul>
+                                            <li>
+                                                <div class="box"><input type="text" id="input19" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input20" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input21" value="" maxlength="1"  /></div>
+                                            </li>
+                                            <li>
+                                                <div class="box"><input type="text" id="input22" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input23" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input24" value="" maxlength="1"  /></div>
+                                            </li>
+                                            <li>
+                                                <div class="box"><input type="text" id="input25" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input26" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input27" value="" maxlength="1"  /></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- END GRID -->
+                                </li>
+                                <li>
+                                    <!-- GRID -->
+                                    <div class="grid">
+                                        <ul>
+                                            <li>
+                                                <div class="box"><input type="text" id="input28" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input29" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input30" value="" maxlength="1"  /></div>
+                                            </li>
+                                            <li>
+                                                <div class="box"><input type="text" id="input31" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input32" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input33" value="" maxlength="1"  /></div>
+                                            </li>
+                                            <li>
+                                                <div class="box"><input type="text" id="input34" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input35" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input36" value="" maxlength="1"  /></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- END GRID -->
+                                    <!-- GRID -->
+                                    <div class="grid">
+                                        <ul>
+                                            <li>
+                                                <div class="box"><input type="text" id="input37" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input38" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input39" value="" maxlength="1"  /></div>
+                                            </li>
+                                            <li>
+                                                <div class="box"><input type="text" id="input40" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input41" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input42" value="" maxlength="1"  /></div>
+                                            </li>
+                                            <li>
+                                                <div class="box"><input type="text" id="input43" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input44" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input45" value="" maxlength="1"  /></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- END GRID -->
+                                    <!-- GRID -->
+                                    <div class="grid">
+                                        <ul>
+                                            <li>
+                                                <div class="box"><input type="text" id="input46" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input47" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input48" value="" maxlength="1"  /></div>
+                                            </li>
+                                            <li>
+                                                <div class="box"><input type="text" id="input49" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input50" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input51" value="" maxlength="1"  /></div>
+                                            </li>
+                                            <li>
+                                                <div class="box"><input type="text" id="input52" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input53" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input54" value="" maxlength="1"  /></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- END GRID -->
+                                </li>
+                                <li>
+                                    <!-- GRID -->
+                                    <div class="grid">
+                                        <ul>
+                                            <li>
+                                                <div class="box"><input type="text" id="input55" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input56" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input57" value="" maxlength="1"  /></div>
+                                            </li>
+                                            <li>
+                                                <div class="box"><input type="text" id="input58" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input59" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input60" value="" maxlength="1"  /></div>
+                                            </li>
+                                            <li>
+                                                <div class="box"><input type="text" id="input61" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input62" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input63" value="" maxlength="1"  /></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- END GRID -->
+                                    <!-- GRID -->
+                                    <div class="grid">
+                                        <ul>
+                                            <li>
+                                                <div class="box"><input type="text" id="input64" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input65" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input66" value="" maxlength="1"  /></div>
+                                            </li>
+                                            <li>
+                                                <div class="box"><input type="text" id="input67" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input68" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input69" value="" maxlength="1"  /></div>
+                                            </li>
+                                            <li>
+                                                <div class="box"><input type="text" id="input70" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input71" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input72" value="" maxlength="1"  /></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- END GRID -->
+                                    <!-- GRID -->
+                                    <div class="grid">
+                                        <ul>
+                                            <li>
+                                                <div class="box"><input type="text" id="input73" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input74" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input75" value="" maxlength="1"  /></div>
+                                            </li>
+                                            <li>
+                                                <div class="box"><input type="text" id="input76" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input77" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input78" value="" maxlength="1"  /></div>
+                                            </li>
+                                            <li>
+                                                <div class="box"><input type="text" id="input79" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input80" value="" maxlength="1"  /></div>
+                                                <div class="box"><input type="text" id="input81" value="" maxlength="1"  /></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- END GRID -->
+                                </li>
+                                <div style="clear:both;"></div>
+                            </ul>
+                            <!-- -->
+                            <div style="clear:both;"></div>
+                        </div>
+                        <!-- END BOARD -->
+                       
+                        <!-- BUTTON -->
+                        <div class="button">
+                        	<ul>
+                            	<li><input type="button"  value="Reset" /></li>
+                            	<li><input type="button"  value="Check" /></li>
+                                <li><input type="button"  value="Solve" /></li>
+                            </ul>
+                        </div>
+                        <!-- END BUTTON -->
+                    </div>
+                </div>
+                <!-- END BLOCK -->
+               
+               
+            </div>
+            <!-- END PAGE -->
+           
+        </div>
+        <!-- END WRAPPER -->
+    </div>
+    <!-- END CONTENT -->
+   
+    
+<script type="text/javascript" src="js/sudoku.js"></script>
+</body>
+
+</html>

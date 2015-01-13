@@ -1,0 +1,134 @@
+/* CONTENT */
+
+#content {
+	margin:20px 0;padding:0;background:#ffffff;
+}
+
+
+
+#content .wrapper .page .content {
+	margin:20px 0;
+	padding:0;
+}
+#content .wrapper .page .content p {
+	margin:10px 0;
+	padding:0;
+	line-height:18px;
+}
+#content .wrapper .page .content .button {
+	margin:20px;
+	padding:0;
+	width:auto;
+	display:block;
+	overflow:auto;
+	clear:both;
+}
+#content .wrapper .page .content .button ul {
+	margin:0;
+	padding:0;
+	width:auto;
+	display:block;
+	overflow:hidden;
+	list-style-type:none;
+	list-style-position:inside;
+	text-align:center;
+}
+#content .wrapper .page .content .button ul li {
+	margin:0 auto;
+	display:inline-block;
+}
+#content .wrapper .page .content .button ul li input[type="button"] {
+	margin:0 5px;
+	display:block;
+}
+
+#content .wrapper .page .block {
+	margin:20px 0;
+	padding:0;
+	width:520px;
+	background:#ffffff;
+}
+#content .wrapper .page .block .title {
+	margin:0;
+	padding:0;
+	width:518px;
+	overflow:auto;
+	background:#f2f2f2;
+	border:1px solid #dddddd;
+}
+#content .wrapper .page .block .title h3 {
+	margin:20px;
+	padding:0;
+	float:left;
+	color:#555555;
+	text-shadow:#ffffff 1px 1px 0;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+#content .wrapper .page .block .content {
+	margin:-1px 0 0 0;
+	padding:0;
+	width:518px;
+	border:1px solid #e8e8e8;
+	border-top:1px solid #dddddd;
+	background:#ffffff;
+}
+
+
+#content .wrapper .left {
+	margin:20px 0 0 20px;
+	paddding:0;
+	float:left;
+}
+#content .wrapper .right {
+	margin:20px 20px 0 0;
+	paddding:0;
+	float:right;
+}
+
+
+
+
+
+.board {
+	margin:20px auto;
+	padding:0;
+	width:415px;
+	background:#ffffff;
+	overflow:hidden;
+}
+.board ul {
+	margin:-5px -15px -15px -5px;
+	padding:0;
+	list-style-position:inside;
+	list-style-type:none;
+	overflow:hidden;
+	float:left;
+}
+.board ul li .grid {
+	margin:0 10px 10px 0;
+	padding:0;
+	width:135px;
+	height:135px;
+	float:left;
+}
+.board ul li .grid ul {
+	margin:0;
+	padding:0;
+	width:135px;
+	height:135px;
+}
+.board ul li .grid ul li .box {
+	margin:5px;
+	padding:0;
+	width:35px;
+	height:35px;
+	float:left;
+}
+.board ul li .grid ul li .box input[type="text"] {
+	margin:0;
+	padding:5px;
+	width:23px;
+	height:23px;
+	border:1px solid #dddddd;
+	text-align:center;
+}
