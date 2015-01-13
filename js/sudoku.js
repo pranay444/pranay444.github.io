@@ -75,10 +75,10 @@ function solve() {
 }
 
 function invalid(inputtext) {
-	console.log(inputtext);
+	
 	var regexp = new RegExp("[1-9]");
 	// IF VALUE IS 1-9
-	if (regexp.test(inputtext.value)) {
+	if (regexp.test(inputtext.value) || inputtext.value =='' ) {
 		//
 	// IF VALUE IS NOT 1-9
 	} else if (!regexp.test(inputtext.value)) {
