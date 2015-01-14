@@ -16,7 +16,7 @@ $(document).ready(function(){
 		reset();
 	});
 	$('#check').on('click',function(){
-		
+		check();
 	});
 	$('#solve').on('click',function(){
 		solve();
@@ -86,4 +86,20 @@ function invalid(inputtext) {
 		inputtext.value = "";
 		alert("Use numbers from 1 to 9.");
 	}
+}
+
+function check(){
+	var inputText4 ='';
+	for(var i =0;i< $('.box').find('input').length;i++)
+		{ 
+			
+			inputText4 = inputText4+$('.box').find('input').eq(i).val();
+
+		}
+		if(inputText4 === sudoku.solution){
+			alert('CONGRATULATIONS');
+		}
+		else{
+			alert('Incorrect ---> Please try again');
+		}
 }
