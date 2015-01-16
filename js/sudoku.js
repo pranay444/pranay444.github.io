@@ -36,6 +36,7 @@ $(document).ready(function(){
 	});
 	
 	$('.nav a').on('click',function(){
+
 		$('.nav a').removeClass('active');
 		$(this).addClass('active');
 		sudoku.level = $(this).closest('li').attr('class');
@@ -67,6 +68,7 @@ function screenMode(){
 }
 
 function reset(){
+	console.log(sudoku.level);
 	for (var i = 0; i < sudoku.inputtext.length; i++) {
 							var inputtext2 = document.getElementById(sudoku.inputtext[i]);
 							var problem2 = sudoku.problem[i];
