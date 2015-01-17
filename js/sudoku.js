@@ -35,13 +35,14 @@ $(document).ready(function(){
 		invalid(this);
 	});
 	
-	$('.nav a').on('click',function(){
+	
+	var parameter = document.location.search.replace("?", "").replace("=", "");
+	if(!parameter){
+		parameter = 'easy';
+	}
 
-		$('.nav a').removeClass('active');
-		$(this).addClass('active');
-		sudoku.level = $(this).closest('li').attr('class');
-		reset();
-	});
+	setNav(parameter);
+	
 	setLevel(sudoku.level);
 	reset();
 
@@ -68,7 +69,7 @@ function screenMode(){
 }
 
 function reset(){
-	console.log(sudoku.level);
+	
 	for (var i = 0; i < sudoku.inputtext.length; i++) {
 							var inputtext2 = document.getElementById(sudoku.inputtext[i]);
 							var problem2 = sudoku.problem[i];
@@ -136,4 +137,12 @@ function setLevel(level){
 		sudoku.solution = sudoku.solution_easy;
 	}
 
+}
+
+function setNav(parameter){
+	
+	$('.nav a').removeClass('active');
+		$('.nav li.'+parameter).find('a').addClass('active');
+		sudoku.level = parameter;
+		reset();
 }
